@@ -1,13 +1,13 @@
-void	ft_putchar(char c)
+void	ft_putchar(char c);
 
-void 	ft_print_alphabet(void)
+void	ft_print_alphabet(void)
 {
-	char	a;
+	char	c;
 
-	a = 'a';
-	while (a <= 'z')
+	c = 'a';
+	while (c <= 'z')
 	{
-		ft_putchar(a);
-		a++;
+		write(1, &c, 1)
+		c++;
 	}
 }
